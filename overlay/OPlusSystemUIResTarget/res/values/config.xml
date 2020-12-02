@@ -11,4 +11,6 @@
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">75</integer>
 
+    <!-- Margin on the bottom of the charging indicator on Keyguard -->
+    <dimen name="keyguard_indication_margin_bottom">3dp</dimen>
 </resources>
