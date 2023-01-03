@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter instantnoodle instantnoodlep kebab,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),rmx3371)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
@@ -91,5 +91,13 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /mnt/vendor/persist/qca6390/wlan_mac.bin $@/wlan_mac.bin
 
-ALL_DEFAULT_INSTALLED_MODULES +=  $(ACDBDATA_SYMLINKS) $(RFS_MDM_ADSP_SYMLINKS) $(RFS_MDM_CDSP_SYMLINKS) $(RFS_MDM_MPSS_SYMLINKS) $(RFS_MDM_SLPI_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
+CAMERA_COMPONENTS_SYMLINKS := $(TARGET_OUT_VENDOR)/lib64
+$(CAMERA_COMPONENTS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating camera components symlinks: $@"
+	@mkdir -p $@
+	@mkdir -p $@/camera/components
+	$(hide) ln -sf /odm/lib64/camera/components/com.qti.stats.pdlib.so $@/camera/components/com.qti.stats.pdlib.so
+	$(hide) ln -sf /odm/lib64/camera/components/libipebpsstriping.so $@/libipebpsstriping.so
+
+ALL_DEFAULT_INSTALLED_MODULES +=  $(ACDBDATA_SYMLINKS) $(CAMERA_COMPONENTS_SYMLINKS) $(RFS_MDM_ADSP_SYMLINKS) $(RFS_MDM_CDSP_SYMLINKS) $(RFS_MDM_MPSS_SYMLINKS) $(RFS_MDM_SLPI_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
 endif
