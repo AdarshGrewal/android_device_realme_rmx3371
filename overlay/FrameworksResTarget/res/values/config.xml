@@ -84,4 +84,14 @@
      <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
      <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- Applications which are disabled unless matching a particular sku -->
+    <string-array name="config_disableApksUnlessMatchedSku_apk_list" translatable="false">
+        <item>com.android.nfc</item>
+        <item>com.android.se</item>
+        <item>com.android.apps.tag</item>
+        <item>com.google.android.tag</item>
+    </string-array>
+
+    <string-array name="config_disableApkUnlessMatchedSku_skus_list" translatable="false">
+    </string-array>
 </resources>
