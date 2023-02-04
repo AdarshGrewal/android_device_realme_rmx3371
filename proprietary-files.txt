@@ -901,14 +901,24 @@ odm/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21615/charging_thermal_config_default.txt
 odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21619/charging_thermal_config_default.txt
 odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2161A/charging_thermal_config_default.txt
 odm/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21623/charging_thermal_config_default.txt
 odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169A/charging_thermal_config_default.txt
 odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
 odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21732/charging_thermal_config_default.txt
 odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21733/charging_thermal_config_default.txt
 odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/smart_chg_config_table.txt
 
 # CNE
 vendor/app/CneApp/CneApp.apk
