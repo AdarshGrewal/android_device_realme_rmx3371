@@ -1153,7 +1153,10 @@ odm/lib64/libgf_hal_G3.so
 odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
+odm/lib64/librpmbengclient.so
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
+vendor/lib64/libhvx_proxy_stub.so
 
 # Fingerprint firmware
 odm/vendor/firmware/ancap64.b00
