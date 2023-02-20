@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter instantnoodle instantnoodlep kebab,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),rmx3371)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
