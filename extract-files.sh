@@ -58,15 +58,6 @@ function blob_fixup() {
         odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service)
             grep -q libshims_fingerprint.oplus.so "${2}" || "${PATCHELF}" --add-needed libshims_fingerprint.oplus.so "${2}"
             ;;
-        odm/etc/init/wlchgmonitor.rc)
-            sed -i "/disabled/d;/seclabel/d" "${2}"
-            ;;
-        odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml)
-            sed -ni "/android.hardware.biometrics.fingerprint/{x;s/hal format/hal override=\"true\" format/;x};x;1!p;\${x;p}" "${2}"
-            ;;
-        odm/lib64/libpwirissoft.so)
-            "${SIGSCAN}" -p "72 1F 00 94" -P "1F 20 03 D5" -f "${2}"
-            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
@@ -77,13 +68,8 @@ function blob_fixup() {
             sed -i "s/^NXP_RF_CONF_BLK_9/#NXP_RF_CONF_BLK_9/" "${2}"
             sed -i "s/^NXP_RF_CONF_BLK_10/#NXP_RF_CONF_BLK_10/" "${2}"
             ;;
-        vendor/lib64/hw/com.qti.chi.override.so)
-            "${SIGSCAN}" -p "9B 2B 04 94" -P "1F 20 03 D5" -f "${2}"
-            "${SIGSCAN}" -p "46 23 04 94" -P "1F 20 03 D5" -f "${2}"
-            sed -i "s/com.oem.autotest/\x00om.oem.autotest/" "${2}"
-            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
-            "${SIGSCAN}" -p "1F 0A 00 94" -P "1F 20 03 D5" -f "${2}"
+            "${SIGSCAN}" -p "AB 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
     esac
 }
