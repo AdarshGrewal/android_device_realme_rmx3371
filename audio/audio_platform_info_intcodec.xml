@@ -134,6 +134,9 @@
         <!--wei.hua@MULTIMEDIA.AUDIODRIVER.HAL, OPLUS_FEATURE_AEC ,2019/12/20, Add for 4ch aec -->
         <param key="noise_reduction_aec" value="enable"/>
         <!--wei.hua@MULTIMEDIA.AUDIODRIVER.HAL, OPLUS_FEATURE_AEC , 2019/12/20, Add for 4ch aec end-->
+        <!--Jie.Luo@MULTIMEDIA.AUDIODRIVER.HAL, 2022/12/3, Add for downlink_mute-->
+        <param key="enable_car_vc_dl_mute" value="true"/>
+        <!--Jie.Luo@MULTIMEDIA.AUDIODRIVER.HAL, 2022/12/3, Add for downlink_mute end  -->
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>

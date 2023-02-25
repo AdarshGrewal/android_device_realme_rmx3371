@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from RMX3371_11_A.01.
+## from RMX3371_11_C.04.
 
 # ACDBs
 odm/etc/acdbdata/Bluetooth_cal.acdb
@@ -120,6 +120,7 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera
+odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml
 odm/lib/libDeVIS.so
 odm/lib/libaiboost_sr.so
 odm/lib/libc++_shared.so
@@ -255,6 +256,7 @@ odm/lib64/libstfaceunlockocl.so
 odm/lib64/libsymphony-cpu.so
 odm/lib64/libsymphonypower.so
 odm/lib64/libwatermark_photo.so
+odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/libextcamera_client.so
@@ -314,6 +316,7 @@ vendor/lib64/libskewknob.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.extcamera@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
@@ -382,6 +385,7 @@ odm/etc/camera/ashdr/ncf_pack.ncf
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
 odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/camera_unit_feature_config.protobuf
 odm/etc/camera/config/hi846
 odm/etc/camera/config/imx471
 odm/etc/camera/config/oplus_camera_algo_switch_config
@@ -625,6 +629,7 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # ESE
 odm/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1007,6 +1012,10 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
+# Osense
+odm/lib64/libosensehalclient.so
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
@@ -1354,11 +1363,6 @@ vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
 # Vibrator firmware
 odm/firmware/aw8697_About_School_RTP_17.bin
 odm/firmware/aw8697_About_School_RTP_17_165Hz.bin
@@ -1371,9 +1375,9 @@ odm/firmware/aw8697_Airy_morning_RTP_70.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin
-odm/firmware/aw8697_Airy_morning_RTP_70_230.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin
+odm/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin

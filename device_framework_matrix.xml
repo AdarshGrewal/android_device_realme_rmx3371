@@ -406,7 +406,7 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.camera.cameraextension</name>
+        <name>vendor.oplus.hardware.cameraextension</name>
         <version>1.0</version>
         <interface>
             <name>ICameraExtensionService</name>
